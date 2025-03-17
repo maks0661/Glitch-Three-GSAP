@@ -1,10 +1,10 @@
-// эффект сбоя с Glitch.js
+// эффект сбоя = Glitch.js
 const title = document.querySelector('.neon-title');
 if (title) {
   const glitch = new Glitch(title, {
     destroy: 5000, // время между сбоями
-    intensity: 0.3, // Интенсивность эффекта
-    scale: 1.1, // Масштаб текста при сбое
+    // intensity: 0.3, // интенсивность эффекта
+    scale: 1.1, // масштаб текста при сбое
     debug: false // отладочный режим
   });
 }
@@ -15,7 +15,7 @@ document.getElementById('toggleParticles').addEventListener('click', () => {
   particlesVisible = !particlesVisible;
 });
 
-// 3D сцена с Three.js
+// 3D сцена = Three.js
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
 const renderer = new THREE.WebGLRenderer({ antialias: true });
@@ -115,7 +115,7 @@ function animate() {
 }
 animate();
 
-// плавная анимация с помощью GSAP
+// плавная анимация = GSAP
 gsap.to('.neon-title', {
   duration: 2,
   y: 20,
